@@ -8,6 +8,44 @@ The project includes a full pipeline:
 - Flask web app for real-time predictions
   
 ---
+## 📂 Project Structure
+```
+Fake_news_detector/
+│
+├── app.py # Flask API for prediction
+├── data/
+│ ├── processed/
+│ │ ├── test_clean.csv
+│ │ ├── train_clean.csv
+│ ├── raw/
+│ ├── fake-news-detection-datasets/News _dataset/
+│ ├── Fake.csv
+│ ├── True.csv
+│
+├── models/
+│ ├── lstm_model_option2.h5
+│
+├── notebook/
+│ ├── fake_news_detector.ipynb
+│
+├── src/
+│ ├── init.py
+│ ├── data_loader.py
+│ ├── download_data.py
+│ ├── lstm_data_prep.py
+│ ├── lstm_trainer.py
+│ ├── predict_lstm.py
+│ ├── preprocess.py
+│ ├── tokenizer.pkl
+│
+├── templates/
+│ ├── index.html
+│
+├── requirements.txt
+├── README.md
+├── .gitignore
+```
+---
 
 ## 🔄 Workflow  
 
