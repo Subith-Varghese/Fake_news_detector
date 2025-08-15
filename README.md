@@ -58,8 +58,8 @@ Handled internally in:
 ```
 python src/lstm_trainer.py
 ```
-- Saves the best model to:
-models/lstm_model_option2.h5
+- Saves the best model to: **models/lstm_model_option2.h5**
+- Saves tokenizer to : **src/tokenizer.pkl**
 
 ---
 
