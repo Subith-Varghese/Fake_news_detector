@@ -14,6 +14,5 @@ The project includes a full pipeline:
 ### 1️⃣ **Download Dataset**  
 We use [Kaggle's Fake News Detection Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets) via the `opendatasets` package.
 
-```bash
-python src/download_data.py
 
+***python src/download_data.py***
