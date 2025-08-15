@@ -37,8 +37,8 @@ data/fake-news-detection-datasets/News _dataset/
 python src/data_loader.py
 ```
 Output:
-  data/processed/train_clean.csv
-  data/processed/test_clean.csv
+data/processed/train_clean.csv
+data/processed/test_clean.csv
 
 ---
 
