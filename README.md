@@ -67,4 +67,22 @@ python src/lstm_trainer.py
 ```
 python app.py
 ```
+Visit: http://127.0.0.1:5000/
 
+Paste any news text → get prediction: Real or Fake.
+
+---
+
+📊 Model Overview
+
+- Architecture: LSTM + Pre-trained Word2Vec embeddings (300D)
+- Sequence Length: 300
+- Vocabulary Size: 20,000
+- Training: Early stopping & checkpoint saving
+
+---
+📌 Future Improvements
+
+- Add BERT-based model for comparison
+- Deploy on Heroku / AWS / Render
+- Enhance UI with Bootstrap/React
