@@ -15,12 +15,17 @@ The project includes a full pipeline:
 We use [Kaggle's Fake News Detection Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets) via the `opendatasets` package.
 
 
+```bash
+python src/download_data.py
 
-**python src/download_data.py**
-
+```md
 
 On GitHub, this will show:
 
 - A nice **bash-formatted code block** for the command  
 - A **normal text explanation** right below it
 
+---
+data/fake-news-detection-datasets/News _dataset/
+    ├── Fake.csv
+    ├── True.csv
