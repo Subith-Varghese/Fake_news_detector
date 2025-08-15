@@ -17,19 +17,3 @@ We use [Kaggle's Fake News Detection Dataset](https://www.kaggle.com/datasets/em
 ```bash
 python src/download_data.py
 
-This will create:
-data/fake-news-detection-datasets/News _dataset/
-    ├── Fake.csv
-    ├── True.csv
-
----
-
-### 2️⃣ Preprocess Data
-
-Removes HTML tags, URLs, punctuation
-
-Expands contractions (e.g., can't → cannot)
-
-Lemmatizes words
-
-Prepares both LSTM-cleaned and BERT-cleaned versions
