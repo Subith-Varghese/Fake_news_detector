@@ -19,10 +19,11 @@ python src/download_data.py
 ```
 
 This will create:
+```
 data/fake-news-detection-datasets/News _dataset/
     ├── Fake.csv
     ├── True.csv
-    
+``` 
 ---
 
 ## 2️⃣ Preprocess Data
