@@ -1,4 +1,8 @@
 # 📰 Fake News Detector  
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)]()
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)]()
+[![Flask](https://img.shields.io/badge/Flask-2.x-green)]()
+
 
 A machine learning application that detects whether a news article is **Fake** or **Real** using **LSTM with Word2Vec embeddings**.  
 The project includes a full pipeline:  
@@ -110,13 +114,33 @@ Visit: http://127.0.0.1:5000/
 Paste any news text → get prediction: Real or Fake.
 
 ---
+🔄 Project Flow
 
+```
+flowchart TD
+    A[Start] --> B[Download Kaggle Dataset]
+    B --> C[Preprocess Data: Clean + Lemmatize]
+    C --> D[Prepare LSTM Inputs: Tokenize + Pad + Embeddings]
+    D --> E[Train LSTM Model with Word2Vec]
+    E --> F[Save Model + Tokenizer]
+    F --> G[Prediction Phase]
+    G --> H[Flask Web App: User Inputs News Article]
+    H --> I[LSTM Model Predicts Real/Fake]
+    I --> J[Result Displayed in Web Interface]
+```
+---
 📊 Model Overview
 
 - Architecture: LSTM + Pre-trained Word2Vec embeddings (300D)
 - Sequence Length: 300
 - Vocabulary Size: 20,000
 - Training: Early stopping & checkpoint saving
+
+---
+📸 Example Output
+
+- 🟢 Real News → Output label = Real
+- 🔴 Fake News → Output label = Fake
 
 ---
 📌 Future Improvements
